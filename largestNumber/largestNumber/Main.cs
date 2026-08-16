@@ -12,30 +12,13 @@ namespace largestNumber
 	{
 	
 	
-		static int largestNumber (int a, int b,int c,int d) 
+		static int largestNumber (int a, int b,int c,int d)
 		{
-		 int lNum;
-		    //lNum = a+b;
-		    
-		    if (a > b) 
-			{
-			lNum = a;
-			}		
-			else   
-			{
-				if (b > c)
-				{ lNum = b; }
-			else 
-			
-					if (c > d)
-				{ lNum = c; }
-				else 
-			lNum = d;
-			}
-		    
-		    
+			int lNum = a;
+			if (b > lNum) lNum = b;
+			if (c > lNum) lNum = c;
+			if (d > lNum) lNum = d;
 			return lNum;
-			
 		}
 	
 	
